@@ -1,0 +1,458 @@
+!SESSION 2020-11-15 14:37:10.606 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=N/A
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/jmb/localdev/teaching/classroom/cpoa/tp2 -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2020-11-15 14:37:14.792
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-15 14:37:14.792
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b28cff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73dbe25,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2020-11-15 14:37:18.808
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.checkModCount(AbstractEList.java:751)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.doNext(AbstractEList.java:699)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.next(AbstractEList.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:109)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-11-15 14:37:18.810
+!MESSAGE Exception occurred while rendering: org.eclipse.ui.trim.status=org.eclipse.e4.ui.model.application.ui.basic.impl.TrimBarImpl@47311277 (tags: [], contributorURI: platform:/plugin/org.eclipse.platform) (widget: Composite {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer@126675fd, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (side: Bottom)
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.checkModCount(AbstractEList.java:751)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.doNext(AbstractEList.java:699)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.next(AbstractEList.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:109)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:765)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:736)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:730)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:714)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 14:41:17.444
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:17.510
+!MESSAGE Reloading core solution
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:17.513
+!MESSAGE Added core solution with classpath /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest555125519.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:17.514
+!MESSAGE solution Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolat.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolatTest.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:17.593
+!MESSAGE solution Running tests: [BouilleurChocolatTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:17.596
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, JAVA_STARTED_ON_FIRST_THREAD_79951=1, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS=/Users/jmb/Library/WebKit/Databases, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest555125519.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, APP_ICON_79951=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_66452=1, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, APP_ICON_66452=../Resources/Eclipse.icns, LOGNAME=jmb, XPC_SERVICE_NAME=0, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 63752]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:41:18.042
+!MESSAGE Update complete. Status FAILING
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 14:42:59.184
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:42:59.186
+!MESSAGE solution Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolat.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:42:59.188
+!MESSAGE solution Running tests: [BouilleurChocolatTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:42:59.189
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, JAVA_STARTED_ON_FIRST_THREAD_79951=1, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS=/Users/jmb/Library/WebKit/Databases, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest555125519.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, APP_ICON_79951=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_66452=1, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, APP_ICON_66452=../Resources/Eclipse.icns, LOGNAME=jmb, XPC_SERVICE_NAME=0, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 63826]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:42:59.588
+!MESSAGE Update complete. Status FAILING
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 14:43:30.600
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:43:30.601
+!MESSAGE solution Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolat.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:43:30.606
+!MESSAGE solution Running tests: [BouilleurChocolatTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:43:30.606
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, JAVA_STARTED_ON_FIRST_THREAD_79951=1, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS=/Users/jmb/Library/WebKit/Databases, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest555125519.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, APP_ICON_79951=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_66452=1, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, APP_ICON_66452=../Resources/Eclipse.icns, LOGNAME=jmb, XPC_SERVICE_NAME=0, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 63849]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 14:43:30.956
+!MESSAGE Update complete. Status PASSING
+!SESSION 2020-11-15 14:52:59.299 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=N/A
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data file:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/ -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2020-11-15 14:53:05.134
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-15 14:53:05.134
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@156ff70f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c5a2d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2020-11-15 15:30:48.751 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.1
+java.vendor=N/A
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/jmb/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2020-11-15 15:30:55.949
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-15 15:30:55.949
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f2fdf3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d180961,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 15:31:22.581
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:22.663
+!MESSAGE Reloading core solution
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:22.666
+!MESSAGE Added core solution with classpath /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:22.667
+!MESSAGE solution Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolat.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin/BouilleurChocolatTest.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:22.733
+!MESSAGE solution Running tests: [BouilleurChocolatTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:22.736
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, APP_ICON_82154=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_82154=1, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/solution/bin:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar:/Applications/Eclipse2020-09.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, LOGNAME=jmb, XPC_SERVICE_NAME=org.eclipse.platform.ide.10768, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 49395]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 15:31:23.264
+!MESSAGE Update complete. Status PASSING
+
+!ENTRY org.eclipse.jface 2 0 2020-11-15 15:40:58.012
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-15 15:40:58.012
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F:
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.format,Format,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28d8ac67,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(COMMAND+SHIFT+F,
+	ParameterizedCommand(Command(cucumber.eclipse.editor.formmater.pretty_formatter,Pretty format feature file,
+		Format,
+		Category(cucumber.eclipse.editor.formmtter,Formatter,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b0f130f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	cucumber.eclipse.editor.featureEditorScope,,,system)
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:12:30.382
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.389
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.390
+!MESSAGE Added core hellocucumber with classpath /Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes:/Users/jmb/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/jmb/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/Users/jmb/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/Users/jmb/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/jmb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.391
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes/hellocucumber/RunCucumberTest.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.402
+!MESSAGE hellocucumber Running tests: [hellocucumber.RunCucumberTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.403
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, APP_ICON_82154=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_82154=1, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes:/Users/jmb/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/jmb/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/Users/jmb/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/Users/jmb/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/jmb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, LOGNAME=jmb, XPC_SERVICE_NAME=org.eclipse.platform.ide.10768, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 51287]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:12:30.837
+!MESSAGE Update complete. Status PASSING
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:17:42.537
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:17:42.538
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:17:42.539
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:17:42.539
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/sol2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:17:42.539
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.eclipse.ui.ide 4 4 2020-11-15 16:17:54.625
+!MESSAGE Problems occurred refreshing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2020-11-15 16:17:54.625
+!MESSAGE The project description file (.project) for 'hellocucumber' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'hellocucumber' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1346)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:376)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:291)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:978)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:961)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshRoot(FileSystemResourceManager.java:1003)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1557)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:274)
+	at org.eclipse.ui.actions.RefreshAction$2.execute(RefreshAction.java:234)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jdt.ui.actions.RefreshAction$WrappedWorkbenchRefreshAction.run(RefreshAction.java:113)
+	at org.eclipse.jdt.ui.actions.RefreshAction.performRefresh(RefreshAction.java:185)
+	at org.eclipse.jdt.ui.actions.RefreshAction.lambda$0(RefreshAction.java:176)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5895)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:38.878
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:38.883
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:38.884
+!MESSAGE Added core hellocucumber with classpath /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/jmb/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/Users/jmb/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/Users/jmb/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/jmb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:38.885
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes/hellocucumber/BouilleurChocolat.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/RunCucumberTest.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:38.891
+!MESSAGE hellocucumber Running tests: [hellocucumber.RunCucumberTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:38.892
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, APP_ICON_82154=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_82154=1, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/jmb/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/Users/jmb/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/Users/jmb/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/jmb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, LOGNAME=jmb, XPC_SERVICE_NAME=org.eclipse.platform.ide.10768, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 51675]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:39.764
+!MESSAGE Update complete. Status FAILING
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:49.212
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:49.216
+!MESSAGE Could not find classpath entry [/hellocucumber/target/classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:49.217
+!MESSAGE Could not find classpath entry [/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:49.217
+!MESSAGE Could not find classpath entry [/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:49.217
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:21:58.312
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:58.317
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:58.318
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes/hellocucumber/BouilleurChocolat.class, /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/RunCucumberTest.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:58.322
+!MESSAGE hellocucumber Running tests: [hellocucumber.RunCucumberTest]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:58.324
+!MESSAGE Launching test runner process with the following configuration:
+Directory: /Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber
+Environment: {PATH=/usr/bin:/bin:/usr/sbin:/sbin, SHELL=/bin/zsh, APP_ICON_82154=../Resources/Eclipse.icns, JAVA_STARTED_ON_FIRST_THREAD_82154=1, USER=jmb, CLASSPATH=/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes:/Users/jmb/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/jmb/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/Users/jmb/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/jmb/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/Users/jmb/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/jmb/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/Users/jmb/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/jmb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/infinitest589626011.jar, TMPDIR=/var/folders/qh/22ng4knn0d7_3zf87v3bw9w00000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HcdFIRI2iR/Listeners, XPC_FLAGS=0x0, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x1, LOGNAME=jmb, XPC_SERVICE_NAME=org.eclipse.platform.ide.10768, HOME=/Users/jmb}
+Command: [/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/bin/java, -mx256m, org.infinitest.testrunner.TestRunnerProcess, org.infinitest.testrunner.DefaultRunner, 51690]
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:21:58.984
+!MESSAGE Update complete. Status FAILING
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:22:34.349
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:22:34.354
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class]
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:24:47.936
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:24:47.941
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class]
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:26:56.866
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:26:56.871
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class]
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:30:23.972
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:30:23.977
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes/hellocucumber/BouilleurChocolat.class]
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:30:56.118
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:30:56.123
+!MESSAGE hellocucumber Files changed: [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes/hellocucumber/StepDefinitions.class]
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:53:15.693
+!MESSAGE Error determining JVM version. Using default version.
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:53:15.695
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:53:15.695
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 2 0 2020-11-15 16:53:15.696
+!MESSAGE Could not find classpath entry [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber/target/test-classes] at file system root or relative to working directory [/Users/jmb/localdev/teaching/classroom/cpoa/tp2/hellocucumber].
+
+!ENTRY org.infinitest.eclipse 1 0 2020-11-15 16:53:15.696
+!MESSAGE Reloading core hellocucumber
+
+!ENTRY org.eclipse.ui.ide 2 4 2020-11-15 16:53:44.394
+!MESSAGE Problems occurred closing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-11-15 16:53:44.394
+!MESSAGE The project description file (.project) for 'hellocucumber' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

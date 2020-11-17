@@ -1,0 +1,27 @@
+
+import cucumber.api.PendingException;  
+import cucumber.api.java.en.Given;  
+import cucumber.api.java.en.Then;  
+import cucumber.api.java.en.When;  
+
+public class SafetySteps {
+
+	
+	@Given("a controller A and a controller B")
+	public void a_controller_A_and_a_controller_B() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+	@When("A is ordered to fill and boil")
+	public void a_is_ordered_to_fill_and_boil() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+	@Then("B cannot boil")
+	public void b_cannot_boil() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+}

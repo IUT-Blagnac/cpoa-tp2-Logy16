@@ -1,0 +1,31 @@
+package hellocucumber;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+import static org.junit.Assert.*;
+
+public class StepDefinitions {
+
+	@Given("a controller A and a controller B")
+	public void a_controller_a_and_a_controller_b() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+	//Some other steps were also undefined:
+
+	@When("A is ordered to fill and boil")
+	public void a_is_ordered_to_fill_and_boil() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("B cannot boil")
+	public void b_cannot_boil() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}
